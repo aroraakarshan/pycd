@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+from pathlib import Path
+
+PKG_PATH = str(Path(__file__).parent.parent)
+
+import sys
+sys.path.insert(0,PKG_PATH)
+
+from pycd.cli import entry_point
+
+entry_point()
